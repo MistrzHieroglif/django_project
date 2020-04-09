@@ -1,0 +1,27 @@
+from django.db import models
+from django.contrib.auth.models import User
+from ticket_system.managers import PlaceManager, AccessManager
+
+
+# MODELS
+
+
+
+
+
+
+
+
+
+        from django.core.exceptions import ObjectDoesNotExist
+from ticket_system.models import Access, Cart, Buyer, Place, BuyerData, ShippingData
+from django.db import models
+import datetime
+from datetime import datetime
+from time import time
+import hashlib
+from enum import Enum
+
+
+
+

@@ -1,0 +1,9 @@
+{% extends 'admin/change_list.html' %}
+{% block object-tools %}
+    <form id="fighter-change-form" method="POST">
+        {% csrf_token %}
+        <input name="fighter-name" class="vTextField">
+        <button class="button" type="submit">Edytuj kartę zawodnika></button>
+    </form>
+    {{block.super}}
+{% endblock object-tools %}

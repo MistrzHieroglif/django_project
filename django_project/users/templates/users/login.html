@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend>Zaloguj się!</legend>
+                {{ form }}
+            </fieldset>
+            <div class="form-group">
+                <button class="registry-buton" type="submit">Zaloguj</button>
+            </div>
+        </form>
+        <div class="box">
+            <small class="text-login">
+                Chcesz założyć konto? <a class="tologin" href="{% url 'register' %}">Zarejestruj się</a>
+            </small>
+        </div>
+    </div>
+</body>
+</html>
